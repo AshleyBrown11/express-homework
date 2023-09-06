@@ -24,16 +24,15 @@ app.set('view engine', 'portal');
 
 // Define Routes
 app.get('/', (req, res) => {
-  res.render('template', {
+  res.render('template2', {
     title: 'We the Best',
     message: 'Who!',
-    content:
-      'We Taking Over, Major Key Alert, Yall know who it is, All I do is win',
+    content:'We Taking Over, Major Key Alert, Yall know who it is, All I do is win',
   });
 });
 
 app.get('/about-me', (req, res) => {
-  res.render('template2', {
+  res.render('template', {
     title: 'Hey',
     message: 'Rick Ross!',
     content: 'The most underated Rapper in the game',
@@ -43,10 +42,10 @@ app.get('/about-me', (req, res) => {
 
 app.get('/another-one', (req, res) => {
   res.render('template', {
-    title: 'We The Best',
-    message: 'Who!',
-    content:
-      'We Taking Over, Major Key Alert, Yall know who it is, All I do is win',
+    title: 'Favorite R&B Singer',
+    message: 'Hmmmm!',
+    content:'I like all 90s, 00s R&B Music',
+    url:'https://images.unsplash.com/photo-1644831245003-e648199e3417?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fDkwcyUyMHIlMjZifGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
   });
 });
 
@@ -86,11 +85,11 @@ app.get('/seventh-one', (req, res) => {
   });
 });
 
-app.get('/eigth-one', (req, res) => {
+app.get('/eighth-one', (req, res) => {
   res.render('template', {
-    title: 'What is your favorite holiday!',
+    title: 'Favorite holiday!',
     message: 'You already know!',
-    content: 'Tell me please!',
+    content: 'Christmas!',
     url: 'https://images.unsplash.com/photo-1609405068355-505d41ce0780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNocmlzdG1hcyUyMGZhbWlseXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
   });
 });
